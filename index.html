@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New Game Menu</title>
+</head>
+<body>
+    <div class="content">
+        <img src="assets/logo.svg" alt="">
+        <div class="chooseSpaceDiv">
+            <h1>PICK PLAYER 1’S MARK</h1>
+            <div class="chooseSpace">
+                <div class="xik"></div>
+                <div class="oik"></div>
+            </div>
+            <h2>REMEMBER : X GOES FIRST</h2>
+        </div>
+        <div id="newGame">
+            <h1>NEW GAME  (VS PLAYER)</h1>
+        </div>
+    </div>
+
+    <script>
+        let O=document.getElementsByClassName("oik");
+        let X=document.getElementsByClassName("xik");
+        let newGame=document.getElementById("newGame");
+
+        X[0].addEventListener('click',()=>{
+            X[0].style.backgroundColor = "#A8BFC9";
+            O[0].style.backgroundColor="#1A2A33"
+        })
+
+        O[0].addEventListener('click',()=>{
+            O[0].style.backgroundColor = "#A8BFC9";
+            X[0].style.backgroundColor="#1A2A33"
+        })
+
+        newGame.addEventListener("click",()=>{
+            window.location.href="game.html";
+        })
+    </script>
+</body>
+</html>

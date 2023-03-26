@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&family=Plus+Jakarta+Sans&family=Red+Hat+Display:ital,wght@0,900;1,400;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A2A33;
+    position: relative;
+}
+
+.container{
+    width: 32%;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.currentPlayerSymbol{
+    width: 30%;
+    height: 52px;
+    background: #1F3641;
+    box-shadow: inset 0px -4px 0px #10212A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#symbol{
+    width: 20px;
+    height: 20px;
+    background-image: url("assets/icon-x.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currentPlayerSymbol h1{
+    margin-left: 13px;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #A8BFC9;
+}
+#restart{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A8BFC9;
+    box-shadow: inset 0px -4px 0px #6B8997;
+    border-radius: 10px;
+}
+#mainContainer{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.element{
+    width: 30%;
+    margin-bottom: 20px;
+    height: 140px;
+    background: #1F3641;
+    box-shadow: inset 0px -8px 0px #10212A;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.footerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player1{
+    width: 30%;
+    height: 72px;
+    background-color: #31C3BD;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player1 h2{
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.875px;
+    text-align: center;
+    color: #1A2A33;
+}
+.player1 h1{
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #1A2A33;
+}
+.player2{
+    background-color: #F2B137;
+}
+
+.winnerAnouncer{
+    width: 100%;
+    position: absolute;
+    height: 200px;
+    background: #1F3641;    
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.winnerAnouncer h6{
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #A8BFC9;
+}
+.playerSymbolHowWOn{
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#winneSymbol{
+    width: 63px;
+    height: 63px;
+}
+.playerSymbolHowWOn h1{
+    margin-left: 10px;
+    font-family: Outfit;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    color: #31C3BD;
+}
+.winnerAnouncerFotter{
+    width: 17%;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#quit{
+    width: 31%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DBE8ED;
+    box-shadow: inset 0px -4px 0px #6B8997;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#quit h1{
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1A2A33;
+}
+#nextRound{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFC860;
+    box-shadow: inset 0px -4px 0px #CC8B13;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#nextRound h1{
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1A2A33;
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 88%;
+    }
+    .winnerAnouncer h6{
+        font-family: Outfit;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.875px;
+        text-align: center;
+    }
+    .playerSymbolHowWOn{
+        width: 74%;
+    }
+    #winneSymbol{
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+    }
+    .playerSymbolHowWOn h1{
+        font-family: Outfit;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 1.5px;
+        text-align: left;
+    }
+    .winnerAnouncerFotter{
+        width: 63%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        width: 60%;
+    }
+    .playerSymbolHowWOn{
+        width: 63%;
+    }
+    #winneSymbol{
+        width: 64px;
+        height: 64px;
+        background-size: 100%;
+    }
+    .winnerAnouncer h6{
+        font-family: Outfit;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .winnerAnouncerFotter{
+        width: 33%;
+    }
+}

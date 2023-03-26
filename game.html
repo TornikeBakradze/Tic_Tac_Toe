@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Game Start</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <img src="assets/logo.svg" alt="">
+            <div class="currentPlayerSymbol">
+                <div id="symbol"></div>
+                <h1>TURN</h1>
+            </div>
+            <div id="restart">
+                <img src="assets/icon-restart.svg" alt="">
+            </div>
+        </div>
+
+        <div id="mainContainer">
+
+        </div>
+
+        <div class="footerContainer">
+            <div class="player1">
+                <h2>X(P1)</h2>
+                <h1>0</h1>
+            </div>
+            <div class="player1 player2">
+                <h2>O(P2)</h2>
+                <h1>0</h1>
+            </div>
+        </div>
+    </div>
+    <div class="winnerAnouncer" id="winnerAnouncer">
+        <h6>YOU WON!</h6>
+        <div class="playerSymbolHowWOn">
+            <div id="winneSymbol"></div>
+            <h1 id="winnerColor">TAKES THE ROUND</h1>
+        </div>
+        <div class="winnerAnouncerFotter">
+            <div id="quit">
+                <h1>QUIT</h1>
+            </div>
+            <div  id="nextRound">
+                <h1>NEXT ROUND</h1>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <script>
+        elementCreator();
+        
+        document.getElementById("quit").addEventListener("click",()=>{
+            window.location.href="index.html"
+        })
+
+        document.getElementById("nextRound").addEventListener('click',nextRound);
+        
+        document.getElementById("restart").addEventListener("click",()=>{
+            window.location.href="index.html"
+        })
+    </script>
+</body>
+</html>
